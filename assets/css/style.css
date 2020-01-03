@@ -1,67 +1,73 @@
 .jumbotron {
-    width: 500px;
-    height: 200px;
-    margin: auto;
+    /* width: 500px;
+    height: 200px; */
+    /* margin: auto; */
     text-align: center;
 }
 
-#randomNumber {
-    width: 200px;
-    height: 200px;
+ #randomNumber {
+    width: 100px;
+    height: 100px;
     background-color: black;
     color: aliceblue;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     font-size: 20px;
-    float: left;
-    margin-left: 100px;
+    margin-top: 20px;
+    
+    /* margin-left: 100px; */
     
 }
 
 #numberGuesses {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: black;
     color: aliceblue;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     font-size: 20px;
+    margin-top: 20px;
     
 }
 
 .winsAndLosses {
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
-.wins {
+ #wins {
     width: 100px;
     height: 100px;
     background-color: black;
     color: aliceblue;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     font-size: 20px;
-    float: left;
-    margin-left: 100px;
+    
+     
     
 
 }
 
-.losses {
+.bottom-buffer {
+    margin-bottom: 20px;
+}
+
+#losses {
     width: 100px;
     height: 100px;
     background-color: black;
     color: aliceblue;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     font-size: 20px;
     
 }
 
-.numbers {
+/* .numbers {
     margin-left: 225px;
     margin-top: 20px;
-}
+} */ */
 
 .gemImage {
     width: 100px;
@@ -70,33 +76,33 @@
 }
 
 .gems {
-    width: 600px;
-    height: 600px;
+    
     margin: auto;
     padding-left: 75px;
 }
 
 @media only screen and (max-width: 850px) {
-    .wins {
-        float: none;
-        margin: auto;
-        margin-left: -50px;
+    #wins {
+        
+        /* margin: auto; */
+        margin-left: 200px;
     }
 
-    .losses {
+    #losses {
         margin-top: 20px;
-        margin-left: -50px;
+        margin-left: 200px;
     }
 
-    .randomNumber {
-        float: none;
-        margin-left: -50px;
+    #randomNumber {
+        
+        margin-left: 200px;
+        margin-top: 20px;
     }
 
-    .numberGuesses {
+    #numberGuesses {
        margin-top: 20px;
-       margin-left: -50px;
+       margin-left: 200px;
     }
-  }
+  
 
  

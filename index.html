@@ -11,32 +11,64 @@
 
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="mx-auto">
+        <div class="jumbotron jumbotron-fluid">
 
-        <h1 id="header">Crystal Collector</h1>
+            <h1 id="header">Crystal Collector</h1>
 
-        <p> You will be given a random number at the start of the game. <br>
-            Click on the crystals to see what amount each crystal is worth. <br>
-            Win by matching your total score to the random number given!
-        </p>
+            <p> You will be given a random number at the start of the game. <br>
+                Click on the crystals to see what amount each crystal is worth. <br>
+                Win by matching your total score to the random number given!
+            </p>
 
+        </div>
     </div>
 
-    <div class="winsAndLosses">
-
-        <div class="wins">Wins</div>
-        <div class="losses">Losses</div>
+    <div class="row justify-content-md-center">
 
 
+
+
+        <div class="containermain">
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div id="wins">Wins</div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="losses">Losses</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="numbers">
 
-        <div id="randomNumber">Random Number<p class= "rando"></p></div>
 
-        <div id="numberGuesses">Your Guess<p class="guess"></p></div>
 
+
+    <div class="row justify-content-md-center">
+
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="numbers">
+
+                <div id="randomNumber">Random Number<p class="rando"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div id="numberGuesses">Your Guess<p class="guess"></p>
+            </div>
+        </div>
     </div>
+    </div>
+
+
+
+
 
     <div class="gems">
 

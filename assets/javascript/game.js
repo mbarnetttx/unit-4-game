@@ -7,7 +7,7 @@ var random = "";
       $(document).ready(function (){
 
  // ... we generate a random number
-      var random = Math.floor(Math.random() * 12) + 1;
+      var random = Math.floor(Math.random() * 120) + 19;
       console.log(random)
 
 
@@ -16,4 +16,10 @@ var random = "";
       })
   ;
   
- 
+//  create function that generates a random number and drops it into the randomNumber/rando box
+
+// create a button out of each gem image
+
+// create a function that assigns each image a random number between 1-12
+
+// create a function that adds up each random integer, 

@@ -1,24 +1,75 @@
-h1 {
-    width: 300px;
+.jumbotron {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.random-number {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    float: left;
+    
+}
+
+.numberguesses {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    
+}
+
+.winsandlosses {
+    margin-left: 250px;
+}
+
+.wins {
+    width: 100px;
     height: 100px;
     background-color: black;
     color: aliceblue;
     margin: auto;
     text-align: center;
+    font-size: 20px;
+    float: left;
+    margin-left: 20px;
+    
+
 }
 
-p {
-    width: 300px;
-    height: auto;
+.losses {
+    width: 100px;
+    height: 100px;
     background-color: black;
     color: aliceblue;
     margin: auto;
     text-align: center;
-
+    
 }
 
-.randomnumber {
-    width: 300;
-    height: auto;
+.numbers {
+    margin-left: 225px;
+    margin-top: 20px;
 }
 
+.gemImage {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.gems {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding-left: 75px;
+}

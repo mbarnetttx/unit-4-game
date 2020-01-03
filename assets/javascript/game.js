@@ -18,5 +18,3 @@ var random = [];
   
 
 
-// first box image
-$('#random-number').css("background-image", "url(/assets/images/crystal1.jpg)");  

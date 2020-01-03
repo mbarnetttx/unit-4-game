@@ -5,30 +5,31 @@
     text-align: center;
 }
 
-.random-number {
+#randomNumber {
     width: 200px;
     height: 200px;
     background-color: black;
     color: aliceblue;
     margin: auto;
     text-align: center;
-    font-size: 100px;
+    font-size: 20px;
     float: left;
+    margin-left: 100px;
     
 }
 
-.numberguesses {
+#numberGuesses {
     width: 200px;
     height: 200px;
     background-color: black;
     color: aliceblue;
     margin: auto;
     text-align: center;
-    font-size: 100px;
+    font-size: 20px;
     
 }
 
-.winsandlosses {
+.winsAndLosses {
     margin-left: 250px;
 }
 
@@ -41,7 +42,7 @@
     text-align: center;
     font-size: 20px;
     float: left;
-    margin-left: 20px;
+    margin-left: 100px;
     
 
 }
@@ -53,6 +54,7 @@
     color: aliceblue;
     margin: auto;
     text-align: center;
+    font-size: 20px;
     
 }
 
@@ -73,3 +75,28 @@
     margin: auto;
     padding-left: 75px;
 }
+
+@media only screen and (max-width: 850px) {
+    .wins {
+        float: none;
+        margin: auto;
+        margin-left: -50px;
+    }
+
+    .losses {
+        margin-top: 20px;
+        margin-left: -50px;
+    }
+
+    .randomNumber {
+        float: none;
+        margin-left: -50px;
+    }
+
+    .numberGuesses {
+       margin-top: 20px;
+       margin-left: -50px;
+    }
+  }
+
+ 

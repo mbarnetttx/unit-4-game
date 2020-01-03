@@ -2,7 +2,7 @@
 
 
 
-var random = [];
+var random = "";
   
       $(document).ready(function (){
 
@@ -12,9 +12,8 @@ var random = [];
 
 
       // ... and then dump the random number into our random-number div.
-      $("#random-number").text(random);
+      $('.rando').text(random);
       })
   ;
   
-
-
+ 

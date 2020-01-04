@@ -18,49 +18,16 @@ $(document).ready(function () {
 
 var wins = 0;
 var losses = 0;
+var total = 0;
 
-
-
-
-// wins and losses
-
-    if(numGuesses() === random()){
-      wins++;
-      alert("You won");
-      //update the HTML 
-      $('.winBox').text(wins)
-
-    
-  
-  else if (numGuesses > random ){
-      losses++;
-      alert("You lost!");
-
-      $("lossBox").text(losses)
-  }
-
-
-  // assign each jewel a random number between 0-12
-var jewelNumb = "";
-
-$(document).ready(function () {
-
-  // ... we generate a random number
-  var jewelNumb = Math.floor(Math.random() * 12) + 0;
-  $('.gemImage').text(jewelNumb)
-}
-
-// assign each jewel a jewelNumb
-
-
-
-
+$('.winBox').text(wins)
+$("lossBox").text(losses)
 
  
 
     
 
-//  create function that generates a random number and drops it into the randomNumber/rando box DONE
+//  create function that generates a random number and drops it into the randomNumber/rando box
 
 // create a button out of each gem image
 

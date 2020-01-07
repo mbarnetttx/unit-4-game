@@ -1,88 +1,106 @@
-.jumbotron {
-    /* width: 500px;
-    height: 200px; */
-    /* margin: auto; */
+body {
+    background-image: url("bomb.png") ;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    
+    
+    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15;
+    letter-spacing: .1rem;
+    }
+
+
+
+h1 {
+    color: black;
+    letter-spacing: .5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+
+p {
+    color: black;
+    font-weight: .2rem;
+    letter-spacing: .02rem;
+}
+
+
+#randomNumber {
+ color: black;
+    
     text-align: center;
-    background-color: rgb(248, 99, 253);
+    font-size: 30px;
+    
    
 }
 
- #randomNumber {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(91, 189, 247);
-    color: rgb(22, 34, 44);
-    /* margin: auto; */
-    text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 20px;
-    
-    /* margin-left: 100px; */
-    
-}
-
 #numberGuesses {
-    width: 200px;
-    height: 200px;
-    background-color:rgb(91, 189, 247);
-    color: rgb(22, 34, 44);
-    /* margin: auto; */
+    color: black;
+    
     text-align: center;
-    font-size: 20px;
-    margin-top: 20px;
-    padding: 20px;
+    font-size: 30px;
     
 }
 
 #lossBox {
-    height: 100px;
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
 #winBox {
-    height: 100px;
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
-#randoBox {
-    height: 100px;
-    width: 100px;
-}
+
 
 #guessBox {
-    height: 100px;
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+#rando {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+    
+}
+
+#reset {
+    width: 400px;
+    height: 50px;
+    
+    text-align: center;
+    color: black
+    ;
+    
 }
 
  #wins {
-    width: 200px;
-    height: 200px;
-    background-color:rgb(127, 252, 175) ;
-    color: rgb(22, 34, 44);
-    /* margin: auto; */
+    color: black;
+    
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    
-     
-    
-
+    font-size: 30px;
 }
 
-/* .bottom-buffer {
-    margin-bottom: 20px;
-} */
+
 
 #losses {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(127, 252, 175);
-    color: rgb(22, 34, 44);
-    /* margin: auto; */
+    color: black;
+    
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 30px;;
     
 }
 
@@ -105,73 +123,8 @@
     
 }
 
- @media only screen and (max-width: 850px) {
-    #wins {
-        
-         margin: auto; 
-         
-    }
-
-    #losses {
-        margin: auto;
-    }
-
-    #randomNumber {
-        margin-top: 20px;
-        margin: auto;
-    }
-
-    #numberGuesses {
-        margin-top: 20px;
-       margin: auto;
-    }
-} 
 
 
-@media only screen and (min-width:580px) and (max-width: 768px) {
-    .containermain {
-    margin-left: 100px;
-    }
-
-    .containerbottom {
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-}
-
-@media only screen and  (max-width: 579px) {
-
-    #losses {
-        width: 120px;
-        height: 120px;
-        margin-top: 20px;
-    }
-
-    #wins {
-        width: 120px;
-        height: 120px;
-    }
-
-    #numberGuesses {
-        width: 120px;
-        height: 120px;
-        margin-top: 20px;
-    }
-
-    #randomNumber {
-        width: 120px;
-        height: 120px;
-        
-    }
-    .containermain {
-    margin-left: 100px;
-    }
-
-    .containerbottom {
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-}
    
 
  

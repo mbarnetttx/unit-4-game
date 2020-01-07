@@ -9,118 +9,84 @@
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 
 <body>
-    <div class="mx-auto">
-        <div class="jumbotron jumbotron-fluid">
 
-            <h1 id="header">Crystal Collector</h1>
+    <div class="header text-center">
 
-            <p> You will be given a random number at the start of the game. <br>
-                Click on the crystals to see what amount each crystal is worth. <br>
-                Win by matching your total score to the random number given!
-            </p>
+        <h1>CRYSTAL COLLECTOR</h1>
 
-        </div>
+        <p> You will be given a random number at the start of the game. <br>
+            Click on the crystals to see what amount each crystal is worth. <br>
+            Win by matching your total score to the random number given!
+        </p>
+
     </div>
-
-    <div class="row justify-content-md-center">
-
-
-
-
-        <div class="containermain">
-
-            <div class="row">
-
-                <div class="col-sm-6">
-                    <div id="wins">Wins<div id="winBox"></div>
-                    </div>
-
-                </div>
-                <div class="col-sm-6">
-                    <div id="losses">Losses<div id="lossBox"></div>
-                    </div>
-
+    <div class="container-sm">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xs-12">
+                <div id="randomNumber">CRYSTAL NUMBER<p class="rando">
                 </div>
             </div>
+
         </div>
-    </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xs-12">
+                <div id="numberGuesses">YOUR GUESS<div id="guessBox">
 
-
-
-
-    <div class="containerbottom">
-        <div class="row justify-content-md-center">
-
-            <div class="row">
-                <div class="col-sm-6">
-
-
-
-                    <div id="randomNumber">Random Number<div id="randoBox">
-                            <p class="rando"></p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div id="numberGuesses">Your Guess<div id="guessBox">
-                            <p class="guess"></p>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
 
-    <div class="gemcontainer">
-        <div class="row justify-content-md-center">
+    <div class="container-sm">
 
-            <div class="row">
 
-                <div class="col-sm-3">
-                    <img src="assets/images/crystal1.jpg" class=gemImage id="one" alt="Blue Gem"></div>
+        <div class="row align-items-center justify-content-center">
 
-                <div class="col-sm-3">
-                    <img src="assets/images/crystal2.jpg" class=gemImage id="two" alt="Green Gem"></div>
+            <div class="col-xs-3 text-center">
+                <img src="assets/images/crystal1cut.png" class="gemImage img-responsive" id="one" alt="Blue Gem"></div>
 
-                <div class="col-sm-3">
-                    <img src="assets/images/crystal3.jpg" class=gemImage id="three" alt="Red Gem"></div>
+            <div class="col-xs-3 text-center">
+                <img src="assets/images/crystal2cut.png" class="gemImage img-responsive" id="two" alt="Green Gem"></div>
+            <br>
+            <div class="col-xs-3 text-center">
+                <img src="assets/images/crystal3cut.png" class="gemImage img-responsive" id="three" alt="Red Gem"></div>
 
-                <div class="col-sm-3">
-                    <img src="assets/images/crystal4.jpg" class=gemImage id="four" alt="Yellow Gem"></div>
-            </div>
+            <div class="col-xs-3 text-center">
+                <img src="assets/images/crystal4cut.png" class="gemImage img-responsive" id="four" alt="Yellow Gem"></div>
         </div>
     </div>
 
-    <div class="reset">
-        <div class="row justify-content-md-center">
 
-            <div class="row">
-
-                <div class="col-sm-3">
-                    <div id="reset">Reset</div>
+    <div class="container-lg">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xs-12">
+                <div id="wins">WINS<div id="winBox"></div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xs-12">
+                <div id="losses">LOSSES<div id="lossBox"></div>
+                </div>
+            </div>
+        </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xs-12">
+                    <div id="reset">CLICK HERE TO RESET</div>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
+    
 
 
 

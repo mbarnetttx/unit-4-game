@@ -11,17 +11,15 @@ $(document).ready(function () {
   // ... and then dump the random number into our rando div.
   $('.rando').text(random);
 
-});
 
- 
+  var currentScore = 0;
+  var wins = 0;
+  var losses = 0;
 
-
-  $(document).ready(function () {
-
-  var jewelOne = "";
-  var jewelTwo = "";
-  var jewelThree = "";
-  var jewelFour = "";
+  var jewelOne ;
+  var jewelTwo ;
+  var jewelThree;
+  var jewelFour ;
 
   // ... we generate a random number for the 4 crystals and send it to the jewel image
   var jewelOne = Math.floor(Math.random() * 12 + 1);
@@ -40,72 +38,119 @@ $(document).ready(function () {
   // When you click a jewel, it sends the number to the guesses box
    // numGuesses = the total of what the users numbers came to, STILL NEED FUNCTION !!!!!!
 
-
+   $(document).ready(function () {
   $("#one").click(function () {
     $('.guessBox').text(jewelOne);
     console.log(jewelOne)
+    addValues(jewelOne)
   });
 
 
   $("#two").click(function () {
     $('.guessBox').text(jewelTwo);
     console.log(jewelTwo)
+    addValues(jewelTwo)
   });
 
   $("#three").click(function () {
     $('.guessBox').text(jewelThree);
     console.log(jewelThree)
+    addValues(jewelThree)
   });
 
   $("#four").click(function () {
     $('.guessBox').text(jewelFour);
     console.log(jewelFour)
+    addValues(jewelFour)
   });
 
-  
-});
+   });
 
 
-  var wins = 0;
-  var losses = 0;
-  var numGuesses = 0;
+   var addValues = function(numGuesses) {
+     console.log(numGuesses)
+    // Change currentScore
+    currentScore += numGuesses;
+    // Change the HTML to reflect changes in currentScore
+    $(".guessBox").text(currentScore);
+    // Call the checkWin Function
+    checkWin();
+    // Testing Console
+    console.log("Your Score: " + currentScore);
+  };
+
+
 
  
-  $(document).ready(function () {
+
+ 
   // wins and losses
 
-  if (numGuesses() === random()) {
+  function checkWin() {
+  if (currentScore === random) {
     wins++;
     alert("You won");
     //update the HTML 
-    $('.winBox').text(wins);
+    $(".winBox").text(wins);
+    resetGAME()
 
   }
 
 
 
-  else if (numGuesses > random) {
+  else if (currentScore > random) {
     losses++;
     alert("You lost!");
 
-    $("lossBox").text(losses);
+    $(".lossBox").text(losses);
+    resetGAME()
 
-  }
+  }}
 
 
 
-});
 
-$(document).ready(function () {
+
+
 // reset game function
-$("#reset").click(function () {
-  $(resetGAME());
+function resetGAME(){
+    var random = "";
 
-  var resetGAME = ready();
+    // ... we generate a random number
+    var random = Math.floor(Math.random() * 120) + 19;
+    console.log(random)
+    // ... and then dump the random number into our rando div.
+    $('.rando').text(random);
+  
+    
+    
+  
+    var jewelOne ;
+    var jewelTwo ;
+    var jewelThree;
+    var jewelFour ;
+  
+    // ... we generate a random number for the 4 crystals and send it to the jewel image
+    var jewelOne = Math.floor(Math.random() * 12 + 1);
+    $('.one').hide(jewelOne);
+  
+    var jewelTwo = Math.floor(Math.random() * 12 + 1);
+    $('.two').hide(jewelTwo);
+  
+    var jewelThree = Math.floor(Math.random() * 12 + 1);
+    $('.three').hide(jewelThree);
+  
+    var jewelFour = Math.floor(Math.random() * 12 + 1);
+    $('.four').hide(jewelFour);
+  
+  
+}
+
+  
   
 });
 
-});
+
 
 
 

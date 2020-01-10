@@ -92,7 +92,7 @@ $(document).ready(function () {
     alert("You won");
     //update the HTML 
     $(".winBox").text(wins);
-    resetGAME()
+    resetGAME();
 
   }
 
@@ -103,7 +103,7 @@ $(document).ready(function () {
     alert("You lost!");
 
     $(".lossBox").text(losses);
-    resetGAME()
+    resetGAME();
 
   }}
 
@@ -114,6 +114,7 @@ $(document).ready(function () {
 
 // reset game function
 function resetGAME(){
+  
     var random = "";
 
     // ... we generate a random number
@@ -124,7 +125,10 @@ function resetGAME(){
   
     
     
-  
+    
+   
+    currentScore = 0 ;
+
     var jewelOne ;
     var jewelTwo ;
     var jewelThree;
@@ -142,9 +146,45 @@ function resetGAME(){
   
     var jewelFour = Math.floor(Math.random() * 12 + 1);
     $('.four').hide(jewelFour);
+
   
-  
-}
+  };
+
+
+
+$(".reset").click(function () {
+  var random = "";
+
+  // ... we generate a random number
+  var random = Math.floor(Math.random() * 120) + 19;
+  console.log(random)
+  // ... and then dump the random number into our rando div.
+  $('.rando').text(random);
+
+
+  currentScore = 0;
+  wins = 0;
+  losses = 0;
+
+  var jewelOne ;
+  var jewelTwo ;
+  var jewelThree;
+  var jewelFour ;
+
+  // ... we generate a random number for the 4 crystals and send it to the jewel image
+  var jewelOne = Math.floor(Math.random() * 12 + 1);
+  $('.one').hide(jewelOne);
+
+  var jewelTwo = Math.floor(Math.random() * 12 + 1);
+  $('.two').hide(jewelTwo);
+
+  var jewelThree = Math.floor(Math.random() * 12 + 1);
+  $('.three').hide(jewelThree);
+
+  var jewelFour = Math.floor(Math.random() * 12 + 1);
+  $('.four').hide(jewelFour);
+ 
+});
 
   
   

@@ -16,7 +16,7 @@ Depolyed using Github
 
 ## Author
 
-* **Meredith Barnett** - *back-end* - [mbarnetttx](https://github.com/mbarnetttx)
+* **Meredith Barnett** - [mbarnetttx](https://github.com/mbarnetttx)
 
 
 ## Acknowledgments
